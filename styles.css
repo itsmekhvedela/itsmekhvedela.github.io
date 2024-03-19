@@ -199,7 +199,6 @@ nav > .nav-button-open:hover {
 }
 main {
     text-align: center;
-    min-height: 40rem;
 }
 main .div-container{
     position: static;
@@ -281,6 +280,10 @@ button:hover {
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+.error404{
+    font-size: 64px;
+    color: var(--color-one);
 }
 /*color picker*/
 .nothing{
