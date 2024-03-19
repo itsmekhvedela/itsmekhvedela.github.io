@@ -243,6 +243,10 @@ main .div-container .box-text a:hover{
     color: var(--color-one);
     text-shadow: var(--color-one)
 }
+main .div-container .feature-list {
+    font-size: 18px;
+    text-shadow: 0px 0px 16px var(--color-two)
+}
 footer {
     position: absolute;
     right: 0;
