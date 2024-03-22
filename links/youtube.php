@@ -12,8 +12,8 @@
         <script src="../myScript.js"></script>
     </head>
     <body id="body" onload="loadTheme()">
+        <main>
         <header>
-            <br><br>
         </header>
         <nav id="navbar">
             <a class="nav-button" href="../index.php">Home</a>
@@ -36,9 +36,8 @@
             </a>
             <button class="btn-toggle" onclick="toggleMode()">◐</button>
         </div>
-        <main>
-            <h1>My Youtube channel</h1>
             <div class="div-container">
+                <h1>My Youtube channel</h1>
                 <div class="div-box">
                     <span class="box-text">Information will be available soon!</span>
                 </div>
