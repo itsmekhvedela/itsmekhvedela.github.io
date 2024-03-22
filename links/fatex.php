@@ -37,8 +37,8 @@
             <button class="btn-toggle" onclick="toggleMode()">◐</button>
         </div>
         <main>
-            <h1>FateX Discord</h1>
             <div class="div-container">
+                <h1>FateX Discord</h1>
                 <div class="div-box">
                     <span class="box-text">Information will be available soon!</span>
                 </div>
