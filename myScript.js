@@ -1,10 +1,10 @@
+const navButtonOpen = document.getElementById("navButtonOpen");
+
 function openSideNav() {
     if (document.getElementById("mySidenav").style.width === "210px") {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("navbar").style.borderBottomRightRadius = "25px";
     } else {
     document.getElementById("mySidenav").style.width = "210px";
-    document.getElementById("navbar").style.borderBottomRightRadius = 0;
     }
 }
 /*
@@ -30,9 +30,9 @@ function loadTheme(){
     let dataTheme = containerBody.getAttribute("data-theme");
     let theme = localStorage.getItem("data-theme");
 
-if (theme === "light"){ 
-    containerBody.setAttribute("data-theme", "light");
+if (theme === "dark"){ 
+    containerBody.setAttribute("data-theme", "dark");
     } else {
-    containerBody.setAttribute("data-theme","dark");
+    containerBody.setAttribute("data-theme","light");
     }
 }
