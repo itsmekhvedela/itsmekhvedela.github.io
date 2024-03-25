@@ -38,8 +38,10 @@ header {
     grid-area: head;
     line-height: 0;
     padding: 4px;
+    text-decoration: none;
     color: var(--color-two);
     background: var(--color-one);
+    cursor: pointer;
 }
 nav{
     grid-area: nav;
@@ -116,6 +118,7 @@ nav > .nav-button-open {
     width: 48px;
     box-shadow: 0px 0px 5px var(--color-one);
     transition: background 0.5s ease, color 0.5s ease;
+    cursor: pointer;
 }
 nav > .nav-button-open:hover {
     color: var(--colorone);
@@ -140,23 +143,25 @@ nav > .nav-button-open:hover {
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
-    color: var(--color-two);
+    color: var(--color-one);
     display: block;
     transition: 0.3s;
     font-family: sans-serif;
     background: var(--color-two-transparent);
     border: none;
+    border-radius: 8px;
     height: 40px;
     width: 200px;
     margin: 5px;
-    scale: 90%;
+    scale: 0.9;
     box-shadow: 0px 0px 5px var(--color-one);
     transition: scale 0.5s ease, color 0.5s ease, background 0.5s ease;
 }
 .sidenav .nav-button-active:hover{
-    scale: 100%;
-    color: var(--color-one);
-    background: var(--color-two-transparent);
+    scale: 1;
+    box-shadow: 0px 0px 5px var(--color-two);
+    color: var(--color-two);
+    background: var(--color-one-transparent);
 }
 .sidenav .nav-button {
     text-align: center;
@@ -170,16 +175,17 @@ nav > .nav-button-open:hover {
     font-family: sans-serif;
     background: var(--color-one-transparent);
     border: none;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 8px;
     height: 40px;
     width: 200px;
     margin: 5px;
-    scale: 90%;
-    box-shadow: 0px 0px 5px var(--color-one);
+    scale: 0.9;
+    box-shadow: 0px 0px 5px var(--color-two);
     transition: scale 0.5s ease, color 0.5s ease, background 0.5s ease;
 }
 .sidenav .nav-button:hover {
-    scale: 100%;
+    scale: 1;
+    box-shadow: 0px 0px 5px var(--color-one);
     color: var(--color-one);
     background: var(--color-two-transparent);
 }
@@ -195,12 +201,12 @@ nav > .nav-button-open:hover {
     font-family: sans-serif;
     background: var(--color-one-transparent);
     border: none;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 8px;
     height: 40px;
     width: 200px;
     margin: 5px;
     scale: 90%;
-    box-shadow: 0px 0px 5px var(--color-one);
+    box-shadow: 0px 0px 5px var(--color-two);
     transition: scale 0.5s ease, color 0.5s ease, background 0.5s ease;
 }
 .div-container{
