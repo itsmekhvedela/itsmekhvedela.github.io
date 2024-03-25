@@ -43,6 +43,10 @@ header {
     background: var(--color-one);
     cursor: pointer;
 }
+header a {
+    text-decoration: none;
+    color: var(--color-two);
+}
 nav{
     grid-area: nav;
     display: flex;
@@ -191,7 +195,6 @@ nav > .nav-button-open:hover {
 }
 .sidenav .btn-toggle {
     text-align: center;
-    line-height: 50%;
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
