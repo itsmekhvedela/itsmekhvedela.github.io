@@ -12,13 +12,13 @@
         <script src="/myScript.js"></script>
     </head>
     <body id="body" onload="loadTheme()">
+    <main>
         <header>
-            <br><br>
-            <template></template>
+            <h1>Khvedela</h1>
         </header>
         <nav id="navbar">
-            <a class="nav-button" href="index.php">Home</a>
-            <a class="nav-button" href="about-me.php">About Me</a>
+            <a class="nav-button" href="index.html">Home</a>
+            <a class="nav-button" href="about-me.html">About Me</a>
             <a class="nav-button" href="#">Contact Me</a>
             <button class="nav-button-open" id="navButtonOpen" onclick="openSideNav()">Ξ</button>
         </nav>
@@ -26,21 +26,21 @@
             <a class="nav-button-active" href="/upcoming-updates.html" title="Upcoming Updates">
                 Upcoming Updates
             </a>
-            <a class="nav-button" href="/links/fatex.php" title="FateX discord community">
+            <a class="nav-button" href="/links/fatex.html" title="FateX discord community">
                 FateX Discord
             </a>
-            <a class="nav-button" href="/links/discord.php" title="My Discord group">
+            <a class="nav-button" href="/links/discord.html" title="My Discord group">
                 My Discord
             </a>
-            <a class="nav-button" href="/links/youtube.php" title="My Youtube channel">
+            <a class="nav-button" href="/links/youtube.html" title="My Youtube channel">
                 My Youtube
             </a>
             <button class="btn-toggle" onclick="toggleMode()" title="Toggle light/dark mode">◐</button>
         </div>
-        <main id="main">
-            <h1>Upcoming Updates!</h1>
+        <article>
             <div class="div-container">
                 <div class="div-box">
+                    <h1>Upcoming Updates!</h1>
                     <span class="feature-list">
                         - I am currently working on website styling and adding more features to the links section of this site. <br>
                         <ol>
@@ -57,9 +57,10 @@
                     </span>
                 </div>
             </div>
-        </main>
-        <footer>
-            <p>&copy;Nicholas Khvedelidze. All rights reserved</p>
-        </footer>
+        </article>
+            <footer>
+                <p>&copy;Nicholas Khvedelidze. All rights reserved</p>
+            </footer>
+    </main>
     </body>
 </html>
