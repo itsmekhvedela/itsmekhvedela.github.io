@@ -76,11 +76,13 @@ footer {
 }
 .rickroll {
     display: none;
-    width: calc(300px, 50%, 600px);
+    margin: 8px;
+    width: clamp(450px, 50%, 600px);
 }
 .rickrollBtn {
     border-radius: 8px;
     padding: 8px;
+    margin: 8px;
     border: 2px solid var(--color-one);
     background: var(--color-two);
     color: var(--color-one);
