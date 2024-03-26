@@ -6,7 +6,7 @@
         <meta name="description" content="Khvedela's main website">
         <meta name="author" content="Nicholas Khvedelidze">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../stylesv2-0.css">
+        <link rel="stylesheet" href="/game/styles.css">
         <title>khvedela</title>
         <link rel="icon" href="../icons/logo.png">
         <script src="../myScript.js"></script>
@@ -40,8 +40,11 @@
             </a>
             <button class="btn-toggle" id="btn-toggle" onclick="toggleMode()">Light Mode</button>
         </div>
-            <article>
-            <canvas></canvas>
+        <article>
+            <img src="/game/gifs/rickroll-roll.gif" alt="immage" id="rickroll" class="rickroll"> <br>
+            <button onclick="rickroll()" id=rickrollBtn class="rickrollBtn">Start Game</button> <br>
+            <div class="gameBorder" id="gameBorder"></div>
+            <script src="../game/game.js"></script>
             </article>
             <footer>
                 <p>&copy;Nicholas Khvedelidze. All rights reserved</p>
