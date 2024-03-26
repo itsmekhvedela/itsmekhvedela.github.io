@@ -68,7 +68,8 @@ footer {
 }
 .gameBorder {
     display: inline-block;
-    border: 2px solid black;
+    background: var(--color-one-transparent);
+    border: 2px solid var(--color-one);
     margin: 8px;
     width: clamp(450px, 50%, 750px);
     height: 300px;
@@ -80,8 +81,9 @@ footer {
 .rickrollBtn {
     border-radius: 8px;
     padding: 8px;
-    background: var(--color-one);
-    color: var(--color-two);
+    border: 2px solid var(--color-one);
+    background: var(--color-two);
+    color: var(--color-one);
 }
 nav > .nav-button-active{
     text-align: center;
