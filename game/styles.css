@@ -47,6 +47,11 @@ header a {
     text-decoration: none;
     color: var(--color-two);
 }
+header img {
+    display: none;
+    width: 0;
+    height: 0;
+}
 nav {
     grid-area: nav;
     display: flex;
@@ -55,6 +60,7 @@ nav {
     background: var(--color-one);
 }
 article {
+    margin-top: 8px;
     text-align: center;
     grid-area: content;
     box-sizing: border-box;
