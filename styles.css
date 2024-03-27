@@ -5,21 +5,15 @@ html {
 [data-theme="light"] {
     --color-one: rgb(0, 32, 63);
     --color-one-transparent: rgba(0, 32, 63, 0.5);
-    --color-one-gradient: linear-gradient(90deg, rgb(173, 239, 209) 0%, rgb(127, 127, 127) 100%);
     --color-two: rgb(173, 239, 209);
     --color-two-transparent: rgba(173, 239, 209, 0.5);
-    --color-two-gradient: linear-gradient(90deg, rgb(127, 127, 127) 0%, rgb(0, 32, 63) 100%);
-    --color-footer-bkg: rgb(50, 50, 50);
     --color-footer-text: white;
 }
 [data-theme="dark"] {
     --color-one: rgb(173, 239, 209);
     --color-one-transparent: rgba(173, 239, 209, 0.5);
-    --color-one-gradient: linear-gradient(90deg, rgb(127, 127, 127) 0%, rgb(0, 32, 63) 100%);
     --color-two: rgb(0, 32, 63);
     --color-two-transparent: rgba(0, 32, 63, 0.5);
-    --color-two-gradient: linear-gradient(90deg, rgb(173, 239, 209) 0%, rgb(127, 127, 127) 100%);
-    --color-footer-bkg: rgb(200, 200, 200);
     --color-footer-text: black;
 }
 body {
@@ -27,22 +21,55 @@ body {
     background-color: var(--color-two);
     overflow: auto;
 }
-nav {
-    z-index: 1;
+main{
+    position: absolute;
     top: 0;
-    right: 0;
     left: 0;
-    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-areas: 
+    "head nav nav"
+    "content content content "
+    "foot foot foot";
+    grid-template-rows: 60px auto 60px;
+}
+header {
+    grid-area: head;
+    line-height: 0;
+    padding: 4px;
+    text-decoration: none;
+    color: var(--color-two);
+    background: var(--color-one);
+    cursor: pointer;
+}
+header a {
+    text-decoration: none;
+    color: var(--color-two);
+}
+header img {
+    display: none;
+    width: 0;
+    height: 0;
+}
+nav{
+    grid-area: nav;
     display: flex;
     justify-content: space-between;
-    border-radius: 25px 25px 25px 25px;
-    border-bottom-right-radius: 25px;
-    width: clamp(20rem, 50% 40rem);
-    overflow: hidden;
-    background-color: var(--color-one-transparent);
-    box-shadow: 2px 2px 2px black;
-    text-align: center;
-    padding: 2px;
+    padding: 4px;
+    background: var(--color-one);
+}
+article {
+    margin: 8px;
+    grid-area: content;
+    box-sizing: border-box;
+}
+footer {
+    grid-area: foot;
+    padding: 5px;
+    background: rgba(50, 50, 50, 0.9);
+    color: rgb(255, 255, 255);
+    font-size: small;
 }
 nav > .nav-button-active{
     text-align: center;
@@ -50,19 +77,19 @@ nav > .nav-button-active{
     font-weight: bold;
     font-size: 12px;
     line-height: 3rem;
-    color: var(--color-two);
+    color: var(--color-one);
     font-family: sans-serif;
-    background: var(--color-two-gradient);
-    border: none;
-    border-radius: 25px 25px 25px 25px;
+    background: var(--color-two);
+    border: solid var(--color-two);
     height: 48px;
+    border-radius: 8px;
     width: clamp(48px, 50%, 192px);
     box-shadow:0px 0px 5px var(--color-one);
     transition: background 0.5s ease, color 0.5s ease;
 }
 nav > .nav-button-active:hover{
-    color: var(--color-one);
-    background: var(--color-one-gradient);
+    color: var(--color-two);
+    background: var(--color-one);
 }
 nav > .nav-button {
     text-align: center;
@@ -70,47 +97,48 @@ nav > .nav-button {
     font-weight: bold;
     font-size: 12px;
     line-height: 3rem;
-    color: var(--color-one);
+    color: var(--color-two);
     transition: 0.3s;
     font-family: sans-serif;
-    background: var(--color-one-gradient);
-    border: none;
-    border-radius: 25px 25px 25px 25px;
+    background: var(--color-one);
+    border: solid var(--color-two);
     height: 48px;
+    border-radius: 8px;
     width: clamp(48px, 50%, 192px);
     box-shadow: 0px 0px 5px var(--color-one);
     transition: background 0.5s ease, color 0.5s ease;
 }
 nav > .nav-button:hover {
-    color: var(--color-two);
-    background: var(--color-two-gradient);
+    color: var(--color-one);
+    background: var(--color-two);
 }
 nav > .nav-button-open {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
-    line-height: calc(50%);
-    color: var(--color-one);
+    line-height: 0;
+    color: var(--color-two);
     transition: 0.3s;
     font-family: sans-serif;;
-    background: var(--color-one-gradient);
-    border: none;
-    border-radius: 25px;
+    background: var(--color-one);
+    border: solid var(--color-two);
+    border-radius: 8px;
     height: 48px;
     width: 48px;
     box-shadow: 0px 0px 5px var(--color-one);
     transition: background 0.5s ease, color 0.5s ease;
+    cursor: pointer;
 }
 nav > .nav-button-open:hover {
-    color: var(--color-two);
-    background: var(--color-two-gradient);
+    color: var(--colorone);
+    background: var(--color-two);
 }
 .sidenav {
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 52px;
+    top: 60px;
     right: 0;
     bottom: 60px;
     text-decoration-color: aqua;
@@ -125,24 +153,25 @@ nav > .nav-button-open:hover {
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
-    color: var(--color-two);
+    color: var(--color-one);
     display: block;
     transition: 0.3s;
     font-family: sans-serif;
-    background: var(--color-two-gradient);
+    background: var(--color-two-transparent);
     border: none;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 8px;
     height: 40px;
     width: 200px;
     margin: 5px;
-    scale: 90%;
+    scale: 0.9;
     box-shadow: 0px 0px 5px var(--color-one);
     transition: scale 0.5s ease, color 0.5s ease, background 0.5s ease;
 }
 .sidenav .nav-button-active:hover{
-    scale: 100%;
-    color: var(--color-one);
-    background: var(--color-one-gradient);
+    scale: 1;
+    box-shadow: 0px 0px 5px var(--color-two);
+    color: var(--color-two);
+    background: var(--color-one-transparent);
 }
 .sidenav .nav-button {
     text-align: center;
@@ -150,60 +179,46 @@ nav > .nav-button-open:hover {
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
-    color: var(--color-one);
+    color: var(--color-two);
     display: block;
     transition: 0.3s;
     font-family: sans-serif;
-    background: var(--color-one-gradient);
+    background: var(--color-one-transparent);
     border: none;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 8px;
     height: 40px;
     width: 200px;
     margin: 5px;
-    scale: 90%;
-    box-shadow: 0px 0px 5px var(--color-one);
+    scale: 0.9;
+    box-shadow: 0px 0px 5px var(--color-two);
     transition: scale 0.5s ease, color 0.5s ease, background 0.5s ease;
 }
 .sidenav .nav-button:hover {
-    scale: 100%;
-    color: var(--color-two);
-    background: var(--color-two-gradient);
+    scale: 1;
+    box-shadow: 0px 0px 5px var(--color-one);
+    color: var(--color-one);
+    background: var(--color-two-transparent);
 }
 .sidenav .btn-toggle {
     text-align: center;
-    line-height: 50%;
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
-    color: var(--color-one);
+    color: var(--color-two);
     display: block;
     transition: 0.3s;
     font-family: sans-serif;
-    background: var(--color-one-gradient);
+    background: var(--color-one-transparent);
     border: none;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 8px;
     height: 40px;
     width: 200px;
     margin: 5px;
     scale: 90%;
-    box-shadow: 0px 0px 5px var(--color-one);
+    box-shadow: 0px 0px 5px var(--color-two);
     transition: scale 0.5s ease, color 0.5s ease, background 0.5s ease;
 }
-.sidenav .btn-toggle #darkThemeButton {
-    visibility: visible;
-}
-.logo{
-    text-decoration: none;
-    margin-bottom: 0.25rem;
-    color:#111;
-    width: 11rem;
-    height: 4rem;
-    float: inline-start;
-}
-main {
-    text-align: center;
-}
-main .div-container{
+.div-container{
     position: static;
     display: flex;
     flex-direction: row;
@@ -220,7 +235,7 @@ main .div-container{
     padding: 16px;
     margin-bottom: 16px;
 }
-main .div-container .div-box{
+.div-container .div-box{
     color: var(--color-two);
     background-color:  var(--color-one-transparent);
     border-style: solid;
@@ -232,49 +247,22 @@ main .div-container .div-box{
     text-align: center;
     padding: 4px;
 }
-main .div-container .box-text {
+.div-container .box-text {
     font-size: 18px;
     text-shadow: 0px 0px 16px var(--color-two);
 }
-main .div-container .box-text a{
+.div-container .box-text a{
     text-decoration: none;
     color: var(--color-two);
     text-shadow: var(--color-two);
 }
-main .div-container .box-text a:hover{
+.div-container .box-text a:hover{
     color: var(--color-one);
     text-shadow: var(--color-one)
 }
-main .div-container .feature-list {
+.div-container .feature-list {
     font-size: 18px;
     text-shadow: 0px 0px 16px var(--color-two)
-}
-footer {
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    height: 50px;
-    padding: 5px;
-    background: var(--color-footer-bkg);
-    color: var(--color-footer-text);
-    font-size: small;
-}
-button {
-    background-color: black;
-    font-size: medium;
-    font-weight: bold;
-    color: white;
-    width: 200px;
-    height: 50px;;
-    border: none;
-    border-radius: 25px 25px 25px 25px;
-    transition: background-color 0.5s ease, color 0.5s ease, scale 0.5s ease;
-}
-button:hover {
-    background-color: white;
-    color: black;
-    scale: 1.1;
 }
 #navButtonOpen {
     transition: margin-left .5s;
