@@ -64,6 +64,9 @@ article {
     grid-area: content;
     box-sizing: border-box;
 }
+.game {
+    text-align: center;
+}
 footer {
     grid-area: foot;
     padding: 5px;
@@ -264,9 +267,12 @@ nav > .nav-button-open:hover {
     font-size: 18px;
     text-shadow: 0px 0px 16px var(--color-two)
 }
-#navButtonOpen {
-    transition: margin-left .5s;
-    padding: 20px;
+.gameBorder {
+    display: inline-block;
+    background: linear-gradient(rgb(20, 40, 80), rgb(60, 120, 240));
+    border: 2px solid var(--color-one);
+    margin: 8px;
+    width: clamp(400px, 50%, 800px);
 }
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
