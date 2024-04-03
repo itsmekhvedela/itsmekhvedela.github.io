@@ -41,9 +41,9 @@ header {
     text-decoration: none;
     color: var(--color-two);
     background: var(--color-one);
-    cursor: pointer;
 }
 header a {
+    cursor: pointer;
     text-decoration: none;
     color: var(--color-two);
 }
@@ -70,15 +70,15 @@ article {
 footer {
     grid-area: foot;
     padding: 5px;
+    font-size: 2vmin;
     background: rgba(50, 50, 50, 0.9);
     color: rgb(255, 255, 255);
-    font-size: small;
 }
 nav > .nav-button-active{
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 2vmin;
     line-height: 3rem;
     color: var(--color-one);
     font-family: sans-serif;
@@ -98,7 +98,7 @@ nav > .nav-button {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 2vmin;
     line-height: 3rem;
     color: var(--color-two);
     transition: 0.3s;
@@ -119,8 +119,8 @@ nav > .nav-button-open {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 0;
+    font-size: 2vmin;
+    line-height: 3rem;
     color: var(--color-two);
     transition: 0.3s;
     font-family: sans-serif;;
