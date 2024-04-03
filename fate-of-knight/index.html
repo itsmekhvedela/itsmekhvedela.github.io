@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Khvedela, Khvedelasenpai, Nicholas Khvedelidze">
+        <meta name="description" content="Khvedela's main website">
+        <meta name="author" content="Nicholas Khvedelidze">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles.css">
+        <title>khvedela</title>
+        <link rel="icon" href="../icons/icon.png">
+        <script src="../myScript.js"></script>
+    </head>
+    <body onload="loadTheme()">
+        <main>
+            <header>
+                <img src="/icons/favicon.png" alt="icon">
+                <a href="../"><h1>Khvedela</h1></a>
+            </header>
+            <nav>
+                <a class="nav-button" href="../">Home</a>
+                <a class="nav-button" href="../about-me.html">About Me</a>
+                <a class="nav-button" href="#">Contact Me</a>
+                <button class="nav-button-open" id="navButtonOpen" onclick="openSideNav()">Ξ</button>
+            </nav>
+            <div id="mySidenav" class="sidenav">
+                <a class="nav-button" href="../upcoming-updates.html" title="Upcoming Updates">
+                    Upcoming Updates
+                </a>
+            <a class="nav-button-active" href="/fate-of-knight/" title="Play Fate of Knight">
+                Fate of Knight
+            </a>
+            <a class="nav-button" href="/game/" title="Play my new game">
+                Game
+            </a>
+            <a class="nav-button" href="../links/fatex.html" title="FateX discord community">
+                FateX Discord
+            </a>
+            <a class="nav-button" href="../links/discord.html" title="My Discord group">
+                My Discord
+            </a>
+            <a class="nav-button" href="../links/youtube.html" title="My Youtube channel">
+                My Youtube
+            </a>
+            <button class="btn-toggle" id="btn-toggle" onclick="toggleMode()">Light Mode</button>
+        </div>
+        <article class="game">
+            <button onclick="gameScreenSize()">change</button><br>
+            <canvas class="gameBorder" id="gameBorder"></canvas>
+            </article>
+            <footer>
+                <p>&copy;Nicholas Khvedelidze. All rights reserved</p>
+            </footer>
+        </main>
+    </body>
+</html>
