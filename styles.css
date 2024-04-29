@@ -8,6 +8,7 @@ html {
     --color-two: rgb(173, 239, 209);
     --color-two-transparent: rgba(173, 239, 209, 0.5);
     --color-footer-text: white;
+    --dash-color: rgb(150, 150, 250);
 }
 [data-theme="dark"] {
     --color-one: rgb(173, 239, 209);
@@ -15,6 +16,7 @@ html {
     --color-two: rgb(0, 32, 63);
     --color-two-transparent: rgba(0, 32, 63, 0.5);
     --color-footer-text: black;
+    --dash-color: rgb(150, 250, 150);
 }
 body {
     color: var(--color-one);
@@ -267,10 +269,13 @@ nav > .nav-button-open:hover {
     font-size: 18px;
     text-shadow: 0px 0px 16px var(--color-two)
 }
+.div-container .feature-list .dash{
+    color: var(--dash-color);
+}
 .gameBorder {
     display: inline-block;
     background: linear-gradient(rgb(20, 40, 80), rgb(60, 120, 240));
-    border: 2px solid var(--color-one);
+    border: 2px solid var(--dash-color);
     margin: 8px;
     width: clamp(400px, 50%, 800px);
 }
