@@ -256,12 +256,12 @@ nav > .nav-button-open:hover {
     font-size: 18px;
     text-shadow: 0px 0px 16px var(--color-two);
 }
-.div-container .box-text a{
+.div-container .box-text .link{
     text-decoration: none;
     color: var(--color-two);
     text-shadow: var(--color-two);
 }
-.div-container .box-text a:hover{
+.div-container .box-text .link:hover{
     color: var(--color-one);
     text-shadow: var(--color-one)
 }
