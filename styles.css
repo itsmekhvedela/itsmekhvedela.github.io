@@ -66,9 +66,6 @@ article {
     grid-area: content;
     box-sizing: border-box;
 }
-.game {
-    text-align: center;
-}
 footer {
     grid-area: foot;
     padding: 5px;
