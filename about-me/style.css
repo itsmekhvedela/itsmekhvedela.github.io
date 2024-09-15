@@ -12,23 +12,3 @@ article{
     width: clamp(64px, 50%, 256px);
     margin-bottom: 16px;
 }
-.GemV{
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 2vmin;
-    line-height: 32px;
-    color: rgb(255, 255, 255);
-    font-family: sans-serif;
-    background: rgb(50, 100, 80);
-    border: solid rgb(255, 255, 255);
-    height: 32px;
-    border-radius: 8px;
-    width: clamp(32px, 50%, 164px);
-    transition: background 0.5s ease, color 0.5s ease;
-}
-.GemV:hover{
-    color: rgb(200, 200, 200);
-    background: rgb(20, 70, 50);
-}
