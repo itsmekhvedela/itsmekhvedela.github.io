@@ -1,0 +1,14 @@
+article{
+    text-align: center;
+}
+.showInfoBtn {
+    background-color: var(--color-one-transparent);
+    color: var(--color-two);
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--color-one);
+    border-radius: 8px;
+    padding: 8px;
+    width: clamp(64px, 50%, 256px);
+    margin-bottom: 16px;
+}
