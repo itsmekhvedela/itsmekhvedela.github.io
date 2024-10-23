@@ -255,6 +255,7 @@ nav > .nav-button-open:hover {
 }
 .div-container .box-text .link{
     text-decoration: none;
+    font-weight: bold;
     color: var(--color-two);
     text-shadow: var(--color-two);
 }
@@ -268,6 +269,74 @@ nav > .nav-button-open:hover {
 }
 .div-container .feature-list .dash{
     color: var(--dash-color);
+}
+.div-list{
+    position: static;
+    text-align: center;
+    column-gap: 8px;
+    row-gap: 8px;
+    left: calc(10%);
+    right: calc(10%);
+    color: var(--color-two);
+    background-color: var(--color-one-transparent);
+    min-height: 64px;
+    border-radius: 25px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+.div-list .contents{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.div-list .div-box{
+    color: var(--color-two);
+    background-color:  var(--color-one-transparent);
+    border-style: solid;
+    border-color: var(--color-two);
+    border-radius: 25px;
+    width: calc(45%);
+    min-height: 64px;
+    overflow: hidden;
+    text-align: center;
+    padding: 4px;
+}
+.div-list .box-text{
+    font-size: 18px;
+    text-shadow: 0px 0px 16px var(--color-two);
+}
+.btn-normal{
+    background-color: var(--color-one-transparent);
+    color: var(--color-one);
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 3vmin;
+    line-height: 2.25rem;
+    border: solid var(--color-one);
+    border-radius: 8px;
+    height: 40px;
+    width: 200px;
+}
+.btn-download{
+    display: inline-block;
+    background-color:rgb(255, 70, 70);
+    color: white;
+    font-size: 32px;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 8px;
+}
+.btn-download:hover{
+    background-color:rgb(255, 50, 50);
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 .gameBorder {
     display: inline-block;
