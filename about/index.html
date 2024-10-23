@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Khvedela, Khvedelasenpai, Nicholas Khvedelidze">
+        <meta name="description" content="Khvedela's main website">
+        <meta name="author" content="Nicholas Khvedelidze">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles.css">
+        <title>khvedela</title>
+        <link rel="icon" href="/icons/logo.png">
+        <script src="/myScript.js"></script>
+        <link rel="stylesheet" href="/about-me/style.css">
+    </head>
+    <body onload="loadTheme()">
+    <main>
+        <header>
+            <img src="/icons/favicon.png" alt="icon">
+            <a href="/"><h1>Khvedela</h1></a>
+        </header>
+        <nav>
+            <a class="nav-button" href="/">Home</a>
+            <a class="nav-button-active" href="/about/">About</a>
+            <a class="nav-button" href="#">Contact Me</a>
+            <a class="nav-button-open" id="navButtonOpen" onclick="openSideNav()">Ξ</a>
+        </nav>
+        <div id="mySidenav" class="sidenav">
+            <a class="nav-button" href="/upcoming-updates/" title="Upcoming Updates">
+                Upcoming Updates
+            </a>
+            <button class="btn-toggle" id="btn-toggle" onclick="toggleMode()">Light Mode</button>
+        </div>
+        <article>
+        <div class="div-container">
+            <h1>საიტის შესახებ</h1>
+                <div class="div-box">
+                    <span class="box-text">
+                        ეს ვებსაიტი შექმნილია იმისათვის რომ ნებისმიერ SA-MP ის მოთამაშეს ჰქონდეს წვდომა ქლეოებზე, 
+                        რომელიც დამზადებულია ჩემს მიერ. ეს ქლეოები დაგეხმარებათ გაიადვილოთ თამაში ან უბრალოდ "იჩეთეროთ".
+                        <br><br>
+                        ასევე შეგიძლიათ ნახოთ განახლებები რომლებზეც ვმუშაობ <a class="link" href="/upcoming-updates/">აი აქ</a>.
+                    </span>
+                </div>
+            </div>
+        </article>
+            <footer>
+                <p>&copy;Nicholas Khvedelidze. All rights reserved</p>
+            </footer>
+    </main>
+    </body>
+</html>
